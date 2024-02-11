@@ -1,0 +1,38 @@
+{
+  "tasks": [
+    {
+      "id": "2",
+      "description": "Tarea 002",
+      "state": "Pendiente"
+    },
+    {
+      "id": "1707676644172",
+      "description": "Realizar pruebas",
+      "state": "Completada"
+    },
+    {
+      "id": "1707677162485",
+      "description": "Probando",
+      "state": "Pendiente"
+    },
+    {
+      "id": "1707677223004",
+      "description": "Nueva tarea",
+      "state": "Pendiente"
+    },
+    {
+      "id": "1707681287382",
+      "description": "nueva",
+      "state": "Pendiente"
+    }
+  ],
+  "customers": [
+    {
+      "name": "John",
+      "surname": "Doe",
+      "dni": "123456789",
+      "dateOfBirth": "1990-01-01",
+      "reference": "My Friend"
+    }
+  ]
+}
