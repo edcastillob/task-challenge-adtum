@@ -7,6 +7,9 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class TaskService {
+  getTasks() {
+    throw new Error('Method not implemented.');
+  }
 
   private serviceURL = 'http://localhost:3000/tasks';
   constructor(

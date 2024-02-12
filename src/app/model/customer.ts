@@ -1,25 +1,27 @@
-export class Customer {
-    person: {
-        name: string;
-        surname: string;
-        dni: string;
-        dateOfBirth: string;
-    };
-    reference: string;
+export class Person {
+  id: number;
+  name: string;
+  surname: string;
+  dni: string;
+  dateOfBirth: string;
 
-    constructor(
-        name: string,
-        surname: string,
-        dni: string,
-        dateOfBirth: string,
-        reference: string
-    ) {
-        this.person = {
-            name: name,
-            surname: surname,
-            dni: dni,
-            dateOfBirth: dateOfBirth
-        };
-        this.reference = reference;
-    }
+  constructor() {
+    this.id = 0;
+    this.name = '';
+    this.surname = '';
+    this.dni = '';
+    this.dateOfBirth = '';
+  }
+}
+
+export class Customer {
+  id: number;
+  person: Person;
+  reference: string;
+
+  constructor() {
+    this.id = 0;
+    this.person = new Person();
+    this.reference = '';
+  }
 }
