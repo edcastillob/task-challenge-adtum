@@ -1,26 +1,31 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Customer } from 'src/app/model/customer';
+import { endpoint } from 'src/app/endpoint';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CustomerService {
   customer(customer: Customer) {
-    throw new Error('Method not implemented.');
+    throw new Error('');
   }
   
-  private apiUrl = 'http://localhost:3000/customers'; 
+  private serviceURL = `${endpoint}customers`; 
   
   constructor(private http: HttpClient) { }
   
   getAllCustomers(): Observable<Customer[]> {
-    return this.http.get<Customer[]>(this.apiUrl);
+    return this.http.get<Customer[]>(this.serviceURL);
   }
   
   addCustomer(customer: Customer): Observable<Customer> {
-    return this.http.post<Customer>(this.apiUrl, customer);
+    // const token = localStorage.getItem('token');
+    // const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
+    
+    return this.http.post<Customer>(this.serviceURL, customer);
+    // return this.http.post<Customer>(this.serviceURL, customer, { headers });
   }
   
 }

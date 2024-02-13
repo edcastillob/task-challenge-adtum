@@ -3,7 +3,7 @@ import { Customer } from 'src/app/model/customer';
 import { Task } from 'src/app/model/task';
 import { TaskService } from 'src/app/service/task.service';
 import { CustomerService } from '../customer/customer.service';
-import { ToastrService, IndividualConfig  } from 'ngx-toastr';
+import { ToastrService  } from 'ngx-toastr';
 
 
 @Component({
@@ -50,13 +50,10 @@ export class TaskComponent implements OnInit{
 
   newTask() {
     const selectedCustomerId = parseInt(this.customerSelect.nativeElement.value, 10);   
-    
     if (!this.addTaskValue || selectedCustomerId === null) {
       return;
     }
- 
     const selectedCustomer = this.customers.find(customer => customer.id == selectedCustomerId);
-    
     if (!selectedCustomer) {
           return        }
         

@@ -24,3 +24,8 @@
     color: azure;
 }
 
+@media (max-width: 768px) {
+    .custom-toggler {
+        background-color: #C8FA5F;
+    }
+}

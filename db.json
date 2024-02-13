@@ -198,7 +198,7 @@
   ],
   "customers": [
     {
-      "id": 1707705972573,
+      "id": "1707705972573",
       "person": {
         "id": 0,
         "name": "Pedro",
@@ -209,7 +209,7 @@
       "reference": "Jose Oviedo"
     },
     {
-      "id": 1707705972574,
+      "id": "1707705972574",
       "person": {
         "id": 1,
         "name": "Maria",
@@ -220,7 +220,7 @@
       "reference": "Juan Sánchez"
     },
     {
-      "id": 1707705972575,
+      "id": "1707705972575",
       "person": {
         "id": 2,
         "name": "Fernando",
@@ -231,7 +231,7 @@
       "reference": "Luis Martinez"
     },
     {
-      "id": 1707705972576,
+      "id": "1707705972576",
       "person": {
         "id": 3,
         "name": "Sara",
@@ -240,6 +240,58 @@
         "dateOfBirth": "2024-05-10"
       },
       "reference": "Elena Ramirez"
+    },
+    {
+      "id": "1707755736310",
+      "person": {
+        "id": 0,
+        "name": "Simon n",
+        "surname": "Bolivar",
+        "dni": "2323123213",
+        "dateOfBirth": "2024-01-28"
+      },
+      "reference": "Jose Oviedo"
+    },
+    {
+      "id": 1707837262340,
+      "person": {
+        "id": 0,
+        "name": "Karlins",
+        "surname": "Medina",
+        "dni": "20890888",
+        "dateOfBirth": "2013-05-13"
+      },
+      "reference": "EL rey David"
+    }
+  ],
+  "users": [
+    {
+      "id": "32c1",
+      "name": "maria",
+      "surname": "Machado",
+      "email": "mariacorina@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "f4a6",
+      "name": "ana",
+      "surname": "lucia",
+      "email": "ana@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "5388",
+      "name": "Cipriano",
+      "surname": "Castro",
+      "email": "cipriano@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "bc39",
+      "name": "Fernanda V ",
+      "surname": "Castillo M",
+      "email": "fcastillo@gmail.com",
+      "password": "123456"
     }
   ]
 }

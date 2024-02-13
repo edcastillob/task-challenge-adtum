@@ -1,7 +1,8 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Task } from '../model/task';
 import { Observable } from 'rxjs';
+import { endpoint } from '../endpoint';
 
 @Injectable({
   providedIn: 'root'
@@ -11,7 +12,7 @@ export class TaskService {
     throw new Error('Method not implemented.');
   }
 
-  private serviceURL = 'http://localhost:3000/tasks';
+  private serviceURL = `${endpoint}tasks`;
   constructor(
     private http: HttpClient
   ) { }
@@ -21,6 +22,8 @@ export class TaskService {
   }
 
   newTask(task: Task): Observable<any>{
+    // const token = localStorage.getItem('token');
+    // const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
     task.id = this.generateId().toString();
     return this.http.post(this.serviceURL, task)
   }

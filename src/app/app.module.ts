@@ -14,6 +14,8 @@ import { ModalModule } from 'ngx-bootstrap/modal';
 import { CustomerComponent } from './components/customer/customer.component';
 import { CustomerAllComponent } from './components/customer/customer-all.component';
 import { ToastrModule } from 'ngx-toastr';
+import { UserComponent } from './components/user/user.component';
+import { AuthComponent } from './components/auth/auth.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,8 @@ import { ToastrModule } from 'ngx-toastr';
     HomeComponent,
     CustomerComponent,
     CustomerAllComponent,
+    UserComponent,
+    AuthComponent,
     
   ],
   imports: [
